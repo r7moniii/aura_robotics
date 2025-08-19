@@ -139,7 +139,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
       ref={rootRef}
       onPointerMove={handleMove}
       onPointerLeave={handleLeave}
-      className={`relative w-full h-full flex flex-wrap justify-center items-start gap-6 ${className}`}
+      className={`relative w-full h-full flex flex-wrap justify-center items-start gap-4 sm:gap-6 ${className}`}
       style={
         {
           "--r": `${radius}px`,
@@ -152,7 +152,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
         <article
           key={i}
           onMouseMove={handleCardMove}
-          className="group relative flex flex-col w-[300px] h-[400px] rounded-[20px] overflow-hidden transition-colors duration-300"
+          className="group relative flex flex-col w-[280px] sm:w-[300px] h-[360px] sm:h-[400px] rounded-[20px] overflow-hidden transition-colors duration-300"
           style={
             {
               background: c.gradient,
@@ -167,7 +167,7 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
                 "radial-gradient(circle at var(--mouse-x) var(--mouse-y), var(--spotlight-color), transparent 70%)",
             }}
           />
-          <div className="relative z-10 h-64 p-[10px] box-border">
+          <div className="relative z-10 h-48 sm:h-64 p-[10px] box-border">
             <img
               src={c.image}
               alt={c.title}
@@ -176,10 +176,10 @@ const ChromaGrid: React.FC<ChromaGridProps> = ({
             />
           </div>
           <footer className="relative z-10 flex-1 p-3 text-white font-sans grid grid-cols-[1fr_auto] gap-x-3 gap-y-1 content-start">
-            <h3 className="m-0 text-[1.05rem] font-semibold">{c.title}</h3>
-            <p className="m-0 text-[0.85rem] opacity-85 leading-tight col-span-2">{c.subtitle}</p>
+            <h3 className="m-0 text-[1rem] sm:text-[1.05rem] font-semibold">{c.title}</h3>
+            <p className="m-0 text-[0.8rem] sm:text-[0.85rem] opacity-85 leading-tight col-span-2">{c.subtitle}</p>
             {c.location && (
-              <span className="text-[0.85rem] opacity-85 text-right">
+              <span className="text-[0.8rem] sm:text-[0.85rem] opacity-85 text-right">
                 {c.location}
               </span>
             )}
