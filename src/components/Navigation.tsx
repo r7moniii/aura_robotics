@@ -36,17 +36,17 @@ const Navigation: React.FC<NavigationProps> = ({ activeSection }) => {
     }`}>
       <div className={`transition-all duration-300 flex items-center ${
         isMobile 
-          ? `px-4 h-16 rounded-2xl ${isScrolled ? 'bg-[#141414]/95 backdrop-blur-md border border-gray-800/50 shadow-lg' : 'bg-[#141414]/90 backdrop-blur-sm border border-gray-700/40'}`
+          ? `px-4 h-16 rounded-full ${isScrolled ? 'bg-[#141414]/95 backdrop-blur-md border border-gray-800/50 shadow-lg' : 'bg-[#141414]/90 backdrop-blur-sm border border-gray-700/40'}`
           : `px-6 lg:px-8 h-16 rounded-full ${isScrolled ? 'bg-[#141414]/95 backdrop-blur-md border border-gray-800/50' : 'bg-[#141414]/80 backdrop-blur-sm border border-gray-700/30'} w-full`
       }`}>
-        <div className={`flex items-center ${isMobile ? 'justify-center w-full' : 'justify-between w-full'}`}>
+        <div className={`flex items-center ${isMobile ? 'justify-start w-full' : 'justify-between w-full'}`}>
           <div className="flex items-center space-x-2 sm:space-x-3 flex-shrink-0">
             <img 
               src="/aura-logo.svg" 
               alt="Aura Robotics Logo" 
               className={`object-contain ${isMobile ? 'h-12 w-12' : 'h-10 w-10 sm:h-16 sm:w-16'}`}
             />
-            <span className={`font-bold ${isMobile ? 'text-lg text-[#9f64cb]' : 'text-base sm:text-xl text-white hidden sm:inline'}`}>
+            <span className={`font-bold ${isMobile ? 'text-lg text-white' : 'text-base sm:text-xl text-white hidden sm:inline'}`}>
               Aura Robotics Team
             </span>
           </div>
