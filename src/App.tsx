@@ -37,6 +37,13 @@ function App() {
   const teamMembers = [
     {
       image: "https://axbqnhcluxxusukcczvw.supabase.co/storage/v1/object/public/bucket/istockphoto-1087531642-612x612-Photoroom.png",
+      title: "Abdulqadir Aldhalia",
+      subtitle: "Elite Programming Mentor & Technical Architect",
+      borderColor: "#9f64cb",
+      gradient: "linear-gradient(145deg, #9f64cb, #000000)",
+    },
+    {
+      image: "https://axbqnhcluxxusukcczvw.supabase.co/storage/v1/object/public/bucket/istockphoto-1087531642-612x612-Photoroom.png",
       title: "Abdulrahim Khoja",
       subtitle: "Visionary Code Architect",
       borderColor: "#9f64cb",
@@ -105,9 +112,9 @@ function App() {
       <Navigation activeSection={activeSection} />
 
       {/* Hero Section */}
-      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28 sm:pt-32 px-6 sm:px-6">
+      <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-28 sm:pt-32 px-4 sm:px-6">
         <div className="absolute inset-0 bg-gradient-to-br from-[#9f64cb]/20 via-transparent to-transparent"></div>
-        <div className="relative z-10 max-w-4xl mx-auto text-left w-full">
+        <div className="relative z-10 max-w-4xl mx-auto text-left w-full max-w-[100vw]">
           <h1 className="text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-8 sm:mb-8 leading-tight">
             Aura Robotics
             <span className="block text-[#9f64cb]">Team</span>
@@ -134,7 +141,7 @@ function App() {
       </section>
 
       {/* Members Section */}
-      <section id="members" className="py-20 sm:py-20 lg:py-32 px-6 sm:px-6">
+      <section id="members" className="py-20 sm:py-20 lg:py-32 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-left mb-16 sm:mb-16">
             <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-6">
@@ -159,7 +166,7 @@ function App() {
       </section>
 
       {/* About Us Section */}
-      <section id="about" className="py-20 sm:py-20 lg:py-32 bg-gradient-to-b from-transparent to-[#9f64cb]/5 px-6 sm:px-6">
+      <section id="about" className="py-20 sm:py-20 lg:py-32 bg-gradient-to-b from-transparent to-[#9f64cb]/5 px-4 sm:px-6">
         <div className="max-w-7xl mx-auto">
           <div className="text-left mb-16 sm:mb-16">
             <h2 className="text-4xl sm:text-4xl lg:text-5xl font-bold mb-6 sm:mb-6">
@@ -229,7 +236,7 @@ function App() {
 
       {/* Footer */}
       <footer className="border-t border-gray-800 py-8">
-        <div className="max-w-7xl mx-auto px-6 sm:px-6 lg:px-8 text-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <p className="text-base sm:text-base text-gray-400">
             © 2024 Aura Robotics Team. Innovating the future, one robot at a time.
           </p>
